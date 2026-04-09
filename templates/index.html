@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini-devhub</title>
+    <title>Mini DevHub - Team Resource Library</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h2 style="color: aquamarine; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="heading">Mini-devhub</h2>
-                <h2>Browse</h2>
-    <div>
-        <ul>
-           <a href="#about.html"><li>About </li></a> 
-           <a href=""><li>Sign up</li></a> 
-           <a href=""><li>Login</li></a> 
-           <a href=""><li>Resources</li></a> 
-        </ul>
+    <header>
+        <h1>Mini DevHub</h1>
+        <p>Team knowledge base — add, browse, edit, and remove learning resources</p>
+    </header>
+
+    
+    <div class="form-card">
+        <h2>Add New Resources</h2>
+        <form id="resourceForm">
+            <input type="text" id="title" placeholder="Resource title (e.g., MDN Web Docs)" required>
+            <input type="url" id="link" placeholder="https://..." required>
+            
+            <select id="category">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <div class="difficulty-group">
+                <label><input type="radio" name="difficulty" value="Beginner"> Beginner</label>
+                <label><input type="radio" name="difficulty" value="Intermediate"> Intermediate</label>
+                <label><input type="radio" name="difficulty" value="Advanced"> Advanced</label>
+            </div>
+            
+            <button type="submit"> Add Resource</button>
+        </form>
     </div>
 
-    <div class="signup">
-        <label for="text">Full Names:</label>
-        <input type="text" placeholder="John Doe">
-<br>
-<br>
-        <label for="password">Password:</label>
-        <input type="password" placeholder="dev@5892">
+    <div class="filters">
+        <select id="filterCategory">
+            <option value="all">All Categories</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="🔍 Search by title...">
     </div>
 
-    <section id="about">
-         <p>
-        <p  class="info">What is minidev hub?</p>
-Mini dev hub is a resource management centre where developers can find learning resources,add learning resources,edit existing resources and be able to delete resources that they no-longer need.
-You want find a mini library of dev resources?
-Please sign up to explore more! 
-    </p>
-    </section>
+    <div id="resourcesContainer" class="resources-grid">
+    </div>
+
+    <script src="static/script.js"></script>
 </body>
 </html>
