@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini DevHub - Team Resource Library</title>
+    <title>Team Resource Library</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <h1>Mini DevHub</h1>
-        <p>Team knowledge base — add, browse, edit, and remove learning resources</p>
+        <p>Team knowledge base — add, browse, edit, and delete learning resources</p>
     </header>
 
     <div class="form-card">
         <h2>Add New Resources</h2>
         <form id="resourceForm">
-            <input type="text" id="title" placeholder="Resource title (e.g., MDN Web Docs)" required>
-            
-            <!-- Option 1: URL Link -->
-            <input type="url" id="link" placeholder="Resource URL (https://...)">
-            
-            <!-- Option 2: File Upload -->
-            <div class="file-upload-group">
+            <input type="text" id="title" placeholder="Resource title (e.g., effective_go)" required>
+                        <input type="url" id="link" placeholder="Resource URL (https://go.dev/doc/effective_go)">
+                        <div class="file-upload-group">
                 <label>OR upload a file:</label>
                 <input type="file" id="fileUpload" accept=".pdf,.doc,.docx,.txt,.md,.ppt,.pptx,.zip,.jpg,.png">
             </div>
@@ -30,7 +26,13 @@
                 <option value="HTML">HTML</option>
                 <option value="CSS">CSS</option>
                 <option value="JavaScript">JavaScript</option>
-                <option value="React">React</option>
+                 <option value="React">React</option>
+                <option value="Golang">Golang</option>
+                <option value="Docker">Docker</option>
+                <option value="Python">Python</option>
+                <option value="Git">Git</option>
+                <option value="GitHub">GitHub</option>
+                <option value="PostgreSQL">PostgreSQL</option>
                 <option value="Other">Other</option>
             </select>
             
