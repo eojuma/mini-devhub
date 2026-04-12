@@ -25,13 +25,17 @@ JavaScript
 #### How to use it
 
 ###### Option 1:
-1.Clone this repository 
+1.Clone this repository https://github.com/eojuma/mini-devhub.git
+
 2.Navigate to the the folder mini-devhub
+
 3.Run 'open index.html'
+
 4.Add,edit and delete resources
 
 ###### Option 2:
 1.Use this link 
+
 2.Add,edit and delete resources
 
 
