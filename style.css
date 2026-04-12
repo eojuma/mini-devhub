@@ -470,3 +470,42 @@ header p {
 .mt-3 {
     margin-top: 1rem;
 }
+
+
+
+/* Edit Button Styles */
+.resource-card .edit-btn {
+    background: #ed8936;
+    color: white;
+}
+
+.resource-card .edit-btn:hover {
+    background: #dd6b20;
+    transform: translateY(-2px);
+}
+
+/* Button container to keep buttons organized */
+.resource-card .edit-btn,
+.resource-card .delete-btn {
+    margin-right: 0.5rem;
+}
+
+/* Form button changes in edit mode */
+#resourceForm button.editing-mode {
+    background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
+}
+
+/* Cancel edit button (optional) */
+.cancel-edit {
+    background: #718096;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.cancel-edit:hover {
+    background: #4a5568;
+}
