@@ -41,8 +41,11 @@ JavaScript
 
 ##### How It Works
 You add a resource (title, link or file, category, difficulty)
+
 JavaScript saves it to your browser's storage
+
 The resource appears on the page instantly
+
 Even if you close and reopen the browser, your resources are still there
 
 
