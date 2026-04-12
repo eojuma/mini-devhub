@@ -43,5 +43,5 @@ Even if you close and reopen the browser, your resources are still there
 
 
 #### Author
-Evans Juma [eojuma](https://github.com/eojuma)
+Evans Juma [eojuma](https://github.com/eojuma/mini-devhub)
 
